@@ -1,0 +1,46 @@
+.task-container{
+    width: 500px;
+    min-height: 65px;
+    background-color: burlywood;
+    margin: 5px 0;
+    padding: 8px 15px 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.task-container:nth-child(3n + 1){
+    background-color: brown;    
+}
+
+.task-container:nth-child(3n + 2){
+    background-color: rgb(167, 68, 68);    
+}
+
+.task-container:nth-child(3n + 3){
+    background-color: rgb(158, 101, 101);    
+}
+
+.task-text{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    overflow-wrap: anywhere;
+}
+
+.task-icon{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.task-container.check{
+    background-color: black;
+    color: white;
+    text-decoration: line-through;
+} 
